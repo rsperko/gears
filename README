@@ -1,0 +1,56 @@
+gears.py is a very simple python script used to compare different bike gear sets. You can input any number of tooth gears front and back, see how many are duplicated, how many are are usable... 
+
+usage:
+
+./gears.py -c 30,42,52 -o 12,13,14,15,17,19,21,23,26
+
+and you will get an output like this:
+
+30x26 01.15 08.36mph
+30x23 01.30 09.45mph
+30x21 01.43 10.36mph
+30x19 01.58 11.45mph
+30x17 01.76 12.79mph
+30x15 02.00 14.50mph   42x21, 52x26
+30x14 02.14 15.53mph -
+30x13 02.31 16.73mph -
+30x12 02.50 18.12mph X
+42x26 01.62 11.71mph
+42x23 01.83 13.24mph
+42x21 02.00 14.50mph   30x15, 52x26
+42x19 02.21 16.02mph   52x23
+42x17 02.47 17.91mph   52x21
+42x15 02.80 20.30mph
+42x14 03.00 21.75mph   52x17
+42x13 03.23 23.42mph
+42x12 03.50 25.37mph
+52x26 02.00 14.50mph X 30x15, 42x21
+52x23 02.26 16.39mph - 42x19
+52x21 02.48 17.95mph - 42x17
+52x19 02.74 19.84mph
+52x17 03.06 22.17mph   42x14
+52x15 03.47 25.13mph
+52x14 03.71 26.92mph
+52x13 04.00 28.99mph
+52x12 04.33 31.41mph
+
+Summary
+gear: 27
+unique gears: 22
+usable gears: 21
+unique usable gears: 19
+percent unique usable gears: 70.37%
+max speed: 31.41
+min speed: 08.36
+
+
+Cogs
+cog 12: 00.00%
+cog 13: 07.69%
+cog 14: 07.14%
+cog 15: 06.67%
+cog 17: 11.76%
+cog 19: 10.53%
+cog 21: 09.52%
+cog 23: 08.70%
+cog 26: 11.54%
